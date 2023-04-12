@@ -14,7 +14,7 @@ subtitle: "welcome to my archive"
 email: junghankyul@gmail.com
 name: 정한결
 description: >
-  A simple yet classy theme for your Jekyll website or blog.
+  개발 관련 공부한 내용들 올리는 블로그
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
@@ -81,7 +81,7 @@ social:
     username: TheBenCentra
     url: https://twitter.com/TheBenCentra
     desc: Follow me on Twitter
-    share: true
+    share: false
 
   - name: Facebook
     icon: facebook
