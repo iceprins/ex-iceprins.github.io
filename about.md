@@ -5,7 +5,7 @@ permalink: /about/
 main_nav: true
 ---
 
-![](/iceprins.github.io/assets/profile.JPG/assets/profile.JPG "Profile Picture"){:.profile}
+![](/Users/junghk97/git/blog/iceprins.github.io/assets/profile.JPG "Profile Picture"){:.profile}
 
 현재 컴퓨터공학을 복수전공하면서 컴퓨터를 공부중이다. 본 전공은 수학이라 처음엔 컴퓨터 공부하는 게 어렵고
 
