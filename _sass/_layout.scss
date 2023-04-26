@@ -101,7 +101,7 @@ pre code.hljs {
 		padding: 3em 1em;
 		&.has-cover {
 			background-color: rgba(0,0,0,0.2);
-			padding: 9em 1em !important;
+			padding: 6em 1em !important;
 			@include media($tablet) {
 				padding: 9em 1em !important;
 			}
@@ -116,7 +116,13 @@ pre code.hljs {
 	box-shadow: 0 2px $highlight-color;
 	padding: 0 1em;
 	margin: 0;
-
+	// Remove this to make header scrollable again
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: $white;
+	z-index: 1;
 	/*
 	*	Navigation Menu - http://refills.bourbon.io/unstyled/ (see "Navigation")
 	*/
@@ -126,52 +132,40 @@ pre code.hljs {
 		float: right;
 		margin: 0;
 		font-size: 1.5em;
-
+		padding-top: 0.5em;
 		@include media ($tablet) {
 			display: none;
 		}
 	}
-
 	// Nav menu
 	.navigation-wrapper {
-		display: flex;
-		align-items: center;
 		@include outer-container;
 		@include clearfix;
 		position: relative;
 	}
-
 	.logo {
-		margin-right: auto;
+		float: left;
 		height: 4em;
-
-
 		@include media ($tablet) {
 			padding-left: $em-base;
 		}
-
 		img {
 			max-height: 2.5em;
 			margin-top: 0.75em;
 			padding-right: 1em;
 		}
-
 		span {
 			font-size: 1.25em;
 		}
 	}
-
 	nav {
-		display: flex;
 		float: none;
-		padding: 0.75em 0;
-
+		padding: 1.25em 0;
 		@include media ($tablet) {
 			float: right;
 			line-height: 1.5em;
 		}
 	}
-
 	ul.navigation-menu {
 		clear: both;
 		display: none;
@@ -179,25 +173,21 @@ pre code.hljs {
 		overflow: visible;
 		padding: 0;
 		width: 100%;
-
 		@include media ($tablet) {
 			display: block;
 			margin: 0;
 			padding: 0;
 		}
-
 		&.show {
 			display: block;
 		}
 	}
-
 	// Nav items
 	ul li.nav-link {
 		display: block;
 		text-align: right;
 		width: 100%;
 		padding: 0.25em 0;
-
 		@include media ($tablet) {
 			background: transparent;
 			display: inline;
@@ -205,37 +195,18 @@ pre code.hljs {
 			width: auto;
 		}
 	}
-
 	li.nav-link {
 		a {
 			display: inline-block;
-			font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-			font-size: 18px;
-			font-weight: 500;
-			line-height: 20px;
-			color: #6e6d7a;
-
 			@include media ($tablet) {
 				padding-right: 1.5em;
 			}
-
-
-			&:hover {
-				color: black;
-				text-decoration: none;
-				-webkit-transition: color 200ms ease;
-				transition: color 200ms ease;
-			}
 		}
-
-
 		&:last-child a {
 			@include media ($tablet) {
 				padding-right: 1em;
 			}
 		}
-
-
 	}
 }
 
