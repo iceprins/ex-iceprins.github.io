@@ -190,32 +190,127 @@ pre code.hljs {
 			display: block;
 		}
 	}
-  // Nav items
-  ul li.nav-link {
-    display: block;
-    text-align: right;
-    width: 100%;
-    padding: 0.25em 0;
-    @include media ($tablet) {
-      background: transparent;
-      display: inline;
-      text-decoration: none;
-      width: auto;
-    }
-  }
-  li.nav-link {
-  	a {
-	    display: inline-block;
-	    @include media ($tablet) {
-	      padding-right: 1.5em;
-	    }
-	  }
-	  &:last-child a {
-	  	@include media ($tablet) {
-    		padding-right: 1em;
-    	}
-    }
-  }
+
+	// Nav items
+	ul li.nav-link {
+		display: block;
+		text-align: right;
+		width: 100%;
+		padding: 0.25em 0;
+
+		@include media ($tablet) {
+			background: transparent;
+			display: inline;
+			text-decoration: none;
+			width: auto;
+		}
+	}
+
+	li.nav-link {
+		a {
+			display: inline-block;
+			font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-size: 18px;
+			font-weight: 500;
+			line-height: 20px;
+			color: #6e6d7a;
+
+			@include media ($tablet) {
+				padding-right: 1.5em;
+			}
+
+
+			&:hover {
+				color: black;
+				text-decoration: none;
+				-webkit-transition: color 200ms ease;
+				transition: color 200ms ease;
+			}
+		}
+
+
+		&:last-child a {
+			@include media ($tablet) {
+				padding-right: 1em;
+			}
+		}
+
+
+	}
+}
+
+/*
+*	Body
+*/
+.page-content {
+	.wrapper {
+		@include outer-container;
+		padding: 1em;
+	}
+
+	/*
+	*	index.html
+	*/
+	.post-list {
+		padding-top: 1em !important;
+		@extend %default-ul;
+	}
+
+	.post-meta {
+		@include outer-container;
+		// padding: 1em 0;
+		color: $medium-gray;
+
+		.post-date {
+			@include span-columns(6);
+			text-align: left;
+			font-size: 0.9em;
+		}
+
+		.post-categories {
+			@include span-columns(6);
+			margin-right: 0;
+			text-align: right;
+			font-size: 0.9em;
+		}
+	}
+
+	.pagination {
+		padding-top: 2em;
+		text-align: center;
+		color: $medium-gray;
+
+		.page-number {
+			padding: 0 1em;
+		}
+
+		a.newer-posts {
+			text-decoration: none;
+		}
+	}
+
+	.site-header-container {
+		color: $white;
+		text-shadow: 0 2px 1px rgba(0, 0, 0, 0.33);
+		background-color: $highlight-color;
+
+		.site-header {
+			.title {
+				font-size: modular-scale(6);
+			}
+
+			.subtitle {
+				font-style: italic;
+				font-size: modular-scale(1);
+			}
+		}
+	}
+
+	img {
+		display: block;
+		margin: auto;
+		width: 90%;
+	}
 }
 
 /*
