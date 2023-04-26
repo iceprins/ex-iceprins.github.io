@@ -16,9 +16,3 @@ main_nav: true
 백엔드 직무에서 일하고 싶어서 스프링을 공부중이며 슬슬 프로젝트도 해보려고 합니다.
 
 개인적으로 공부하는 것들은 [github](https://github.com/iceprins)에도 업로드 중입니다.
-
-
-
-[centrarium]: https://github.com/bencentra/centrarium
-[bencentra]: http://bencentra.com
-[jekyll]: https://github.com/jekyll/jekyll
