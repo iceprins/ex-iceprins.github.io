@@ -198,9 +198,23 @@ pre code.hljs {
 	li.nav-link {
 		a {
 			display: inline-block;
+			font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif; // 수정
+			font-size: 18px; // 수정
+			font-weight: 500; // 수정
+			line-height: 20px; // 수정
+			color: #6e6d7a; // 수정
+
 			@include media ($tablet) {
 				padding-right: 1.5em;
 			}
+
+			&:hover { // 추가
+				color: black;
+				text-decoration: none;
+				-webkit-transition: color 200ms ease;
+				transition: color 200ms ease;
+			}
+
 		}
 		&:last-child a {
 			@include media ($tablet) {
