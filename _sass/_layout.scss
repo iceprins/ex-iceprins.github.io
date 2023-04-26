@@ -101,7 +101,7 @@ pre code.hljs {
 		padding: 3em 1em;
 		&.has-cover {
 			background-color: rgba(0,0,0,0.2);
-			padding: 6em 1em !important;
+			padding: 9em 1em !important;
 			@include media($tablet) {
 				padding: 9em 1em !important;
 			}
@@ -245,7 +245,7 @@ pre code.hljs {
 .page-content {
 	.wrapper {
 		@include outer-container;
-		padding: 1.5em;
+		padding: 1em;
 	}
 
 	/*
